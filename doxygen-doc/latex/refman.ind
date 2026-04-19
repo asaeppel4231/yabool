@@ -1,0 +1,35 @@
+\begin{theindex}
+
+  \item {License}, \hyperpage{3}
+  \item {LICENSE.md}, \hyperpage{7}
+
+  \indexspace
+
+  \item {README.md}, \hyperpage{7}
+
+  \indexspace
+
+  \item {yabool}, \hyperpage{1}
+    \subitem {yabool.h}, \hyperpage{9}
+  \item {yabool.h}, \hyperpage{7}
+    \subitem {yabool}, \hyperpage{9}
+    \subitem {yabool\_is\_false}, \hyperpage{9}
+    \subitem {yabool\_is\_true}, \hyperpage{9}
+    \subitem {yabool\_set\_false}, \hyperpage{9}
+    \subitem {yabool\_set\_true}, \hyperpage{10}
+    \subitem {YAFALSE}, \hyperpage{8}
+    \subitem {YATRUE}, \hyperpage{8}
+  \item {yabool\_is\_false}
+    \subitem {yabool.h}, \hyperpage{9}
+  \item {yabool\_is\_true}
+    \subitem {yabool.h}, \hyperpage{9}
+  \item {yabool\_set\_false}
+    \subitem {yabool.h}, \hyperpage{9}
+  \item {yabool\_set\_true}
+    \subitem {yabool.h}, \hyperpage{10}
+  \item {YAFALSE}
+    \subitem {yabool.h}, \hyperpage{8}
+  \item {YATRUE}
+    \subitem {yabool.h}, \hyperpage{8}
+
+\end{theindex}
