@@ -1,8 +1,0 @@
-prefix=/usr/local
-exec_prefix=${prefix}
-includedir=${prefix}/include
-
-Name: yabool
-Description: Header-only boolean utilities for the YA ecosystem
-Version: 1.0
-Cflags: -I${includedir}/ya-ecosystem/bool
