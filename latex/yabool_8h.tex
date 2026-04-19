@@ -1,0 +1,198 @@
+\doxysection{yabool.\+h File Reference}
+\hypertarget{yabool_8h}{}\label{yabool_8h}\index{yabool.h@{yabool.h}}
+
+
+Drop-\/in replacement of stdbool.\+h to make my programs and other ya-\/ libraries ANSI C compatible.  
+
+
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+Include dependency graph for yabool.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{yabool_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db}{YATRUE}}~1
+\begin{DoxyCompactList}\small\item\em Boolean true value for yabool. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d}{YAFALSE}}~0
+\begin{DoxyCompactList}\small\item\em Boolean false value for yabool. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}}
+\begin{DoxyCompactList}\small\item\em \texorpdfstring{$<$}{<} Just included for the NULL pointer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{yabool_8h_a3342b0f451c0a412d60140868a719dc1}{yabool\+\_\+is\+\_\+false}} (\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}} boolean)
+\begin{DoxyCompactList}\small\item\em Checks whether a yabool value is false. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{yabool_8h_afab9f857857694dad79cf645277861df}{yabool\+\_\+is\+\_\+true}} (\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}} boolean)
+\begin{DoxyCompactList}\small\item\em Checks whether a yabool value is true. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{yabool_8h_a93d67ba149a297a315699f5cf5ac7aba}{yabool\+\_\+set\+\_\+false}} (\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}} \texorpdfstring{$\ast$}{*}boolean)
+\begin{DoxyCompactList}\small\item\em Sets a yabool variable to false. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{yabool_8h_a8d8e68c93eaaf65cace7076c0aab5d77}{yabool\+\_\+set\+\_\+true}} (\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}} \texorpdfstring{$\ast$}{*}boolean)
+\begin{DoxyCompactList}\small\item\em Sets a yabool variable to true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Drop-\/in replacement of stdbool.\+h to make my programs and other ya-\/ libraries ANSI C compatible. 
+
+\begin{DoxyAuthor}{Author}
+asaeppel4231 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+This header defines the {\ttfamily yabool} type and related helper functions. It is designed to be minimal, portable, and usable in ANSI C environments where stdbool.\+h is not available. 
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d}\label{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d} 
+\index{yabool.h@{yabool.h}!YAFALSE@{YAFALSE}}
+\index{YAFALSE@{YAFALSE}!yabool.h@{yabool.h}}
+\doxysubsubsection{\texorpdfstring{YAFALSE}{YAFALSE}}
+{\footnotesize\ttfamily \#define YAFALSE~0}
+
+
+
+Boolean false value for yabool. 
+
+\Hypertarget{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db}\label{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db} 
+\index{yabool.h@{yabool.h}!YATRUE@{YATRUE}}
+\index{YATRUE@{YATRUE}!yabool.h@{yabool.h}}
+\doxysubsubsection{\texorpdfstring{YATRUE}{YATRUE}}
+{\footnotesize\ttfamily \#define YATRUE~1}
+
+
+
+Boolean true value for yabool. 
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}\label{yabool_8h_ab646db4af8c03ad0c9488c78248b2213} 
+\index{yabool.h@{yabool.h}!yabool@{yabool}}
+\index{yabool@{yabool}!yabool.h@{yabool.h}}
+\doxysubsubsection{\texorpdfstring{yabool}{yabool}}
+{\footnotesize\ttfamily \mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}}}
+
+
+
+\texorpdfstring{$<$}{<} Just included for the NULL pointer 
+
+Boolean type (optionally) used by the ya-\/framework.
+
+This is an unsigned char that represents boolean values in ANSI C. Use YATRUE and YAFALSE instead of 1 and 0 for clarity. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{yabool_8h_a3342b0f451c0a412d60140868a719dc1}\label{yabool_8h_a3342b0f451c0a412d60140868a719dc1} 
+\index{yabool.h@{yabool.h}!yabool\_is\_false@{yabool\_is\_false}}
+\index{yabool\_is\_false@{yabool\_is\_false}!yabool.h@{yabool.h}}
+\doxysubsubsection{\texorpdfstring{yabool\_is\_false()}{yabool\_is\_false()}}
+{\footnotesize\ttfamily static int yabool\+\_\+is\+\_\+false (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}}}]{boolean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Checks whether a yabool value is false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boolean} & The value to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if false, 0 otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{boolean}\ ==\ \mbox{\hyperlink{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d}{YAFALSE}};}
+\DoxyCodeLine{00043\ \}}
+
+\end{DoxyCode}
+\Hypertarget{yabool_8h_afab9f857857694dad79cf645277861df}\label{yabool_8h_afab9f857857694dad79cf645277861df} 
+\index{yabool.h@{yabool.h}!yabool\_is\_true@{yabool\_is\_true}}
+\index{yabool\_is\_true@{yabool\_is\_true}!yabool.h@{yabool.h}}
+\doxysubsubsection{\texorpdfstring{yabool\_is\_true()}{yabool\_is\_true()}}
+{\footnotesize\ttfamily static int yabool\+\_\+is\+\_\+true (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}}}]{boolean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Checks whether a yabool value is true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boolean} & The value to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if true, 0 otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{boolean}\ ==\ \mbox{\hyperlink{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db}{YATRUE}};}
+\DoxyCodeLine{00052\ \}}
+
+\end{DoxyCode}
+\Hypertarget{yabool_8h_a93d67ba149a297a315699f5cf5ac7aba}\label{yabool_8h_a93d67ba149a297a315699f5cf5ac7aba} 
+\index{yabool.h@{yabool.h}!yabool\_set\_false@{yabool\_set\_false}}
+\index{yabool\_set\_false@{yabool\_set\_false}!yabool.h@{yabool.h}}
+\doxysubsubsection{\texorpdfstring{yabool\_set\_false()}{yabool\_set\_false()}}
+{\footnotesize\ttfamily static int yabool\+\_\+set\+\_\+false (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}} \texorpdfstring{$\ast$}{*}}]{boolean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets a yabool variable to false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boolean} & Pointer to the variable to modify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+YATRUE on success, YAFALSE if the pointer is NULL. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keywordtype}{boolean}\ ==\ NULL)\{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d}{YAFALSE}};}
+\DoxyCodeLine{00062\ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \ \ \ \ *\textcolor{keywordtype}{boolean}\ =\ \mbox{\hyperlink{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d}{YAFALSE}};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db}{YATRUE}};}
+\DoxyCodeLine{00065\ \}}
+
+\end{DoxyCode}
+\Hypertarget{yabool_8h_a8d8e68c93eaaf65cace7076c0aab5d77}\label{yabool_8h_a8d8e68c93eaaf65cace7076c0aab5d77} 
+\index{yabool.h@{yabool.h}!yabool\_set\_true@{yabool\_set\_true}}
+\index{yabool\_set\_true@{yabool\_set\_true}!yabool.h@{yabool.h}}
+\doxysubsubsection{\texorpdfstring{yabool\_set\_true()}{yabool\_set\_true()}}
+{\footnotesize\ttfamily static int yabool\+\_\+set\+\_\+true (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}} \texorpdfstring{$\ast$}{*}}]{boolean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets a yabool variable to true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boolean} & Pointer to the variable to modify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+YATRUE on success, YAFALSE if the pointer is NULL. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keywordtype}{boolean}\ ==\ NULL)\{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d}{YAFALSE}};}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ *\textcolor{keywordtype}{boolean}\ =\ \mbox{\hyperlink{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db}{YATRUE}};}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db}{YATRUE}};}
+\DoxyCodeLine{00079\ \}}
+
+\end{DoxyCode}

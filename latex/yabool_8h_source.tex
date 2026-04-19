@@ -1,0 +1,43 @@
+\doxysection{yabool.\+h}
+\hypertarget{yabool_8h_source}{}\label{yabool_8h_source}\mbox{\hyperlink{yabool_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ YABOOL\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ YABOOL\_H}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <stddef.h>}\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ YATRUE\ 1}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ YAFALSE\ 0}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{yabool_8h_a3342b0f451c0a412d60140868a719dc1}{yabool\_is\_false}}(\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}}\ \textcolor{keywordtype}{boolean})\{}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{boolean}\ ==\ \mbox{\hyperlink{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d}{YAFALSE}};}
+\DoxyCodeLine{00043\ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{yabool_8h_afab9f857857694dad79cf645277861df}{yabool\_is\_true}}(\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}}\ \textcolor{keywordtype}{boolean})\{}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{boolean}\ ==\ \mbox{\hyperlink{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db}{YATRUE}};}
+\DoxyCodeLine{00052\ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{yabool_8h_a93d67ba149a297a315699f5cf5ac7aba}{yabool\_set\_false}}(\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}}*\ \textcolor{keywordtype}{boolean})\{}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keywordtype}{boolean}\ ==\ NULL)\{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d}{YAFALSE}};}
+\DoxyCodeLine{00062\ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \ \ \ \ *\textcolor{keywordtype}{boolean}\ =\ \mbox{\hyperlink{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d}{YAFALSE}};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db}{YATRUE}};}
+\DoxyCodeLine{00065\ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{yabool_8h_a8d8e68c93eaaf65cace7076c0aab5d77}{yabool\_set\_true}}(\mbox{\hyperlink{yabool_8h_ab646db4af8c03ad0c9488c78248b2213}{yabool}}*\ \textcolor{keywordtype}{boolean})\{}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keywordtype}{boolean}\ ==\ NULL)\{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{yabool_8h_ab10a73d19541f8e2dde092fb72b3a26d}{YAFALSE}};}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ *\textcolor{keywordtype}{boolean}\ =\ \mbox{\hyperlink{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db}{YATRUE}};}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{yabool_8h_ad81dc25df0264ef62424f3b9040eb5db}{YATRUE}};}
+\DoxyCodeLine{00079\ \}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
