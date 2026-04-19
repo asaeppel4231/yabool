@@ -1,0 +1,19 @@
+build
+
+# Autotools generated files
+Makefile
+Makefile.in
+aclocal.m4
+autom4te.cache/
+config.h.in
+config.log
+config.status
+configure
+install-sh
+missing
+yabool.pc
+
+# Backup files
+*~
+*.tar.gz
+
